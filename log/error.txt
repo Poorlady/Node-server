@@ -4,3 +4,6 @@ Thursday,14thSep2023	23:57:52	94345e63-46ca-4124-a3a5-04256f2175dd	Error: Not Al
 Thursday,14thSep2023	23:57:52	987a9589-2009-46ea-9a4e-37b23024cf62	Error: Not Allowed by CORS
 Sunday,17thSep2023	14:28:59	37978564-c2f8-401e-aee1-78ced8d48b37	Error: ENOENT: no such file or directory, stat 'C:\Users\Poorlady\Desktop\Sandbox\node-be\routes\views\index.html'
 Sunday,17thSep2023	14:28:59	5489a050-91a9-46e9-b32d-d00390849231	Error: ENOENT: no such file or directory, stat 'C:\Users\Poorlady\Desktop\Sandbox\node-be\routes\views\index.html'
+Tuesday,19thSep2023	12:17:32	3da95bf2-865b-4b83-9826-fdc51caed704	TypeError: Cannot read properties of undefined (reading 'split')
+Tuesday,19thSep2023	12:18:23	268c415d-a65b-455d-b34e-42e9fdf1890f	TypeError: Cannot read properties of undefined (reading 'split')
+Tuesday,19thSep2023	13:27:46	de3a611e-3f57-4c94-b135-dd7a43d5982e	Error: invalid expiresIn option for string payload

@@ -16,17 +16,17 @@ routes.get('/old-page', (req, res, next) => {
 });
 
 const one = (req, res, next) => {
-    console.log('one');
+    //console.log('one');
     next();
 };
 
 const two = (req, res, next) => {
-    console.log('two');
+    //console.log('two');
     next();
 };
 
 const three = (req, res, next) => {
-    console.log('three');
+    //console.log('three');
     res.json({ result: 'middleware success' });
 };
 

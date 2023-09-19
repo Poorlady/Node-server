@@ -1,14 +1,16 @@
+const cors = require('cors');
+const cookieParses = require('cookie-parser');
 const express = require('express');
 const path = require('path');
-const cors = require('cors');
 const logRequest = require('./middleware/logRequest');
 const logError = require('./middleware/logError');
+const verifyJWT = require('./middleware/verifyJWT');
 const corsOptions = require('./config/cors');
 const server = express();
 const PORT = 3500;
 
 server.use(cors(corsOptions));
-
+server.use(cookieParses());
 server.use(logRequest);
 
 // built in middleware from express to handle urlendcoded data
@@ -25,6 +27,9 @@ server.use('/', require('./routes/root'));
 
 server.use('/subdir', require('./routes/subdir'));
 
+server.use('/api/auth', require('./routes/api/auth'));
+
+server.use(verifyJWT);
 server.use('/api/users', require('./routes/api/users'));
 
 // server.get('/*', (req, res, next) => {
